@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/layout/Navbar";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import {Switch, Route, HashRouter } from "react-router-dom";
 import Index from "./components/projects/Index";
 import Film from "./components/projects/Film/Film";
 import Main from "./components/pages/Main";
@@ -88,8 +88,8 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <BrowserRouter>
-          <AppContext.Provider value={contextElement}>
+            <HashRouter basename='/'>
+           <AppContext.Provider value={contextElement}>
             <Navbar></Navbar>
             <Switch>
               <Route exact path="/" component={Main}></Route>
@@ -105,7 +105,7 @@ class App extends React.Component {
               <Route component={Error}></Route>
             </Switch>
           </AppContext.Provider>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }
