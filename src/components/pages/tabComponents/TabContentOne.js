@@ -66,6 +66,7 @@ const TabContentContainer = styled.div`
         @media(max-width: 1440px){
             font-size: 20px;
             line-height: 1;
+            margin-top: 32px; 
         }
     
     }
