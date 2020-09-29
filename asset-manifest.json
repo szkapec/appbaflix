@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/appbaflix/static/css/main.f1ada8e3.chunk.css",
+    "main.js": "/appbaflix/static/js/main.aced535e.chunk.js",
+    "main.js.map": "/appbaflix/static/js/main.aced535e.chunk.js.map",
+    "runtime-main.js": "/appbaflix/static/js/runtime-main.7750c8e9.js",
+    "runtime-main.js.map": "/appbaflix/static/js/runtime-main.7750c8e9.js.map",
+    "static/js/2.1a25af5e.chunk.js": "/appbaflix/static/js/2.1a25af5e.chunk.js",
+    "static/js/2.1a25af5e.chunk.js.map": "/appbaflix/static/js/2.1a25af5e.chunk.js.map",
+    "index.html": "/appbaflix/index.html",
+    "precache-manifest.56362a83e3ff5f44922167d6085b4633.js": "/appbaflix/precache-manifest.56362a83e3ff5f44922167d6085b4633.js",
+    "service-worker.js": "/appbaflix/service-worker.js",
+    "static/css/main.f1ada8e3.chunk.css.map": "/appbaflix/static/css/main.f1ada8e3.chunk.css.map",
+    "static/js/2.1a25af5e.chunk.js.LICENSE.txt": "/appbaflix/static/js/2.1a25af5e.chunk.js.LICENSE.txt",
+    "static/media/640.jpg": "/appbaflix/static/media/640.edaf83e9.jpg",
+    "static/media/Glosss.m4a": "/appbaflix/static/media/Glosss.55e00c41.m4a",
+    "static/media/tab-1-pic.png": "/appbaflix/static/media/tab-1-pic.fab25bc3.png",
+    "static/media/tab-macbook.png": "/appbaflix/static/media/tab-macbook.66c7c1fb.png",
+    "static/media/tab-tablet.png": "/appbaflix/static/media/tab-tablet.dc986d81.png",
+    "static/media/tab-tv.png": "/appbaflix/static/media/tab-tv.9f91203b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7750c8e9.js",
+    "static/js/2.1a25af5e.chunk.js",
+    "static/css/main.f1ada8e3.chunk.css",
+    "static/js/main.aced535e.chunk.js"
+  ]
+}
