@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6cc97bd63f91b53cb49764cfb714af11",
+    "revision": "6bb9f143ae850d8c2835eb30c4a295ba",
     "url": "/appbaflix/index.html"
   },
   {
-    "revision": "26a1db9d9460a7e472fa",
+    "revision": "9ba4bbd2b7baa683910d",
     "url": "/appbaflix/static/css/main.f1ada8e3.chunk.css"
   },
   {
-    "revision": "82ca1affb39fda3acdfb",
-    "url": "/appbaflix/static/js/2.1a25af5e.chunk.js"
+    "revision": "a5e36329f1dc22f850d8",
+    "url": "/appbaflix/static/js/2.d9585d56.chunk.js"
   },
   {
     "revision": "aef280276b8d6f56e9d8dc46988119d9",
-    "url": "/appbaflix/static/js/2.1a25af5e.chunk.js.LICENSE.txt"
+    "url": "/appbaflix/static/js/2.d9585d56.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "26a1db9d9460a7e472fa",
-    "url": "/appbaflix/static/js/main.aced535e.chunk.js"
+    "revision": "9ba4bbd2b7baa683910d",
+    "url": "/appbaflix/static/js/main.ffa5c68b.chunk.js"
   },
   {
     "revision": "d938883403c31557f378",
