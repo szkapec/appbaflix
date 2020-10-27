@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/appbaflix/static/css/main.f32657a5.chunk.css",
-    "main.js": "/appbaflix/static/js/main.379d3d5e.chunk.js",
-    "main.js.map": "/appbaflix/static/js/main.379d3d5e.chunk.js.map",
+    "main.css": "/appbaflix/static/css/main.364c8871.chunk.css",
+    "main.js": "/appbaflix/static/js/main.2226690f.chunk.js",
+    "main.js.map": "/appbaflix/static/js/main.2226690f.chunk.js.map",
     "runtime-main.js": "/appbaflix/static/js/runtime-main.7750c8e9.js",
     "runtime-main.js.map": "/appbaflix/static/js/runtime-main.7750c8e9.js.map",
-    "static/js/2.d9585d56.chunk.js": "/appbaflix/static/js/2.d9585d56.chunk.js",
-    "static/js/2.d9585d56.chunk.js.map": "/appbaflix/static/js/2.d9585d56.chunk.js.map",
+    "static/js/2.95b65a57.chunk.js": "/appbaflix/static/js/2.95b65a57.chunk.js",
+    "static/js/2.95b65a57.chunk.js.map": "/appbaflix/static/js/2.95b65a57.chunk.js.map",
     "index.html": "/appbaflix/index.html",
-    "precache-manifest.6373e21a757e14fd4c042b3153041194.js": "/appbaflix/precache-manifest.6373e21a757e14fd4c042b3153041194.js",
+    "precache-manifest.0f11d1d8d4db86637ef0cde1edcf0343.js": "/appbaflix/precache-manifest.0f11d1d8d4db86637ef0cde1edcf0343.js",
     "service-worker.js": "/appbaflix/service-worker.js",
-    "static/css/main.f32657a5.chunk.css.map": "/appbaflix/static/css/main.f32657a5.chunk.css.map",
-    "static/js/2.d9585d56.chunk.js.LICENSE.txt": "/appbaflix/static/js/2.d9585d56.chunk.js.LICENSE.txt",
+    "static/css/main.364c8871.chunk.css.map": "/appbaflix/static/css/main.364c8871.chunk.css.map",
+    "static/js/2.95b65a57.chunk.js.LICENSE.txt": "/appbaflix/static/js/2.95b65a57.chunk.js.LICENSE.txt",
     "static/media/640.jpg": "/appbaflix/static/media/640.edaf83e9.jpg",
     "static/media/Glosss.m4a": "/appbaflix/static/media/Glosss.55e00c41.m4a",
     "static/media/tab-1-pic.png": "/appbaflix/static/media/tab-1-pic.fab25bc3.png",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7750c8e9.js",
-    "static/js/2.d9585d56.chunk.js",
-    "static/css/main.f32657a5.chunk.css",
-    "static/js/main.379d3d5e.chunk.js"
+    "static/js/2.95b65a57.chunk.js",
+    "static/css/main.364c8871.chunk.css",
+    "static/js/main.2226690f.chunk.js"
   ]
 }

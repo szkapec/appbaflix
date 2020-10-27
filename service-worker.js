@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/appbaflix/precache-manifest.6373e21a757e14fd4c042b3153041194.js"
+  "/appbaflix/precache-manifest.0f11d1d8d4db86637ef0cde1edcf0343.js"
 );
 
 self.addEventListener('message', (event) => {
