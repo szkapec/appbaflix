@@ -4,13 +4,10 @@ import styled from 'styled-components';
 import image from '../../../assets/images/baflix2.png';
 import {Link} from 'react-router-dom';
 export default function Cart() {
-    
-
     return (
         <>
          <Image alt={image} className="img-baflix" src={image}></Image>
         <StyledAll>
-           
             <AppContext.Consumer>
                 {(context) => {
                    return <div key={context}>
@@ -101,9 +98,7 @@ const StyledAll = styled.div`
         position: relative;
         margin-bottom: 40px;
     }
-
     .relative { 
-  
         position: absolute;
         top: 10px;
         left: 40px;

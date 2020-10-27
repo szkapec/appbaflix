@@ -55,10 +55,10 @@ export default class HightSlider extends Component {
                 return (
                   <div key={id} className="swiper-slides">
                     <StyledSpan className="opacity">
-                      <span className="B_absolute">B</span>
+                     
                       <div className="description">{item.alt}</div>
                       <br></br>
-                      <div className="red">
+                      <div className="white">
                         <span className="news">Nowość </span>
                         <span className="sixteen">16+</span>
                         <span className="title">{item.time}</span>
@@ -107,32 +107,37 @@ export default class HightSlider extends Component {
 }
 const StyledSpan = styled.span`
   position: absolute;
-  top: 100px;
+  bottom: 0px;
   left: 0;
   right: 0;
   opacity: 0;
-  color: red;
+  background-color: rgba(10,10,10,0.6);
+  height: 300px;
+  color: white;
   animation-duration: 3s;
+  font-family: 'Dancing Script', cursive;
   svg {
     bottom: 50px;
     left: 100px;
   }
 
   .news {
-    color: red;
+    color: white;
   }
-  .red {
-    color: red;
+  .white {
+    color: white;
   }
   .sixteen {
-    border: 1px solid red;
+    border: 1px solid white;
     padding: 1px 3px;
     margin: 10px;
   }
   .description {
-    color: red;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 3px;
+
     text-transform: uppercase;
-    text-decoration: underline;
   }
 `;
 
@@ -160,6 +165,7 @@ const StyledAll = styled.div`
           }
         }
     .absolut {
+      z-index: 9999;
       position: absolute;
       bottom: 50px;
       opacity: 1;
@@ -216,13 +222,11 @@ const StyledAll = styled.div`
 
       }
       :hover {
-        
        .opacity{
           opacity:1;
           animation-name:opacity;
           z-index: 999;
        }
-       
         opacity: 1;
         transform: scale(1.1);
 
@@ -231,7 +235,7 @@ const StyledAll = styled.div`
           
         }
         .seasons {
-          color: red;
+          color: white;
         }
       }
     }

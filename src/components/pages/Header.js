@@ -12,7 +12,7 @@ class Header extends Component {
             <StyledHeader className="header containers">
                 
                 <div className="header-top">
-                        <StyledLogo src={logs}></StyledLogo>
+                        
                     <NavLink to="/login" className="sugnIn-btn">Zaloguj się</NavLink>
                 </div>
                 <div className="header-content">
@@ -75,9 +75,12 @@ const StyledHeader = styled.div`
     position: relative;
     margin: 0;
     background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2019/02/17/03/17/sunset-4001481_960_720.jpg') no-repeat;
-    background-size: 100% 45%;
-    margin-top: 56px;
-    @media(min-width: 600px) {
+      height: 80vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    @media(min-width: 1200px) {
         background-size: 100%;
     }
 

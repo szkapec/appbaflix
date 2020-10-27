@@ -9,10 +9,7 @@ const ResponsivePlayer = () => {
                 width="100vw"
                 height="95vh"
                 controls
-                
                 >
-                
-                
         </ReactPlayer>
         </div>
         <div>responcive?</div>

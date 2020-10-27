@@ -56,10 +56,10 @@ const TabContainer = styled.div`
         .title {
             margin: 0 11%;
             font-size: 20px;
-            line-height: 30px;
+            line-height: 25px;
         @media(min-width: 1440px) {
             line-height: 30px;
-            font-size: 32px;
+            font-size: 25px;
             }
         }
     }
@@ -127,8 +127,8 @@ const TabContainer = styled.div`
     .title {
         margin-top: 32px; 
         @media(max-width: 1440px) {
-            font-size: 20px;
-            line-height: 1;
+            font-size: 18px;
+            line-height: 30px;
             }
     }
 `

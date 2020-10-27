@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledAll = styled.div`
+.img-choice:hover {
+  margin-left: 30px;
+}
 .B_absolute {
   position:absolute;
   top: 20px;
@@ -37,6 +40,8 @@ export const StyledAll = styled.div`
     font-size: 16px;
   }
 }
+
+
 .swiper-container {
       width: 100%;
       height: auto;
@@ -46,6 +51,8 @@ export const StyledAll = styled.div`
       text-align: center;
       font-size: 18px;
       display: flex;
+      border-radius: 5px;
+
       background-color: grey;
       justify-content: center;
       align-items: center;
@@ -55,6 +62,7 @@ export const StyledAll = styled.div`
       width: 100%;
       height: auto;
       max-height: 172px;
+      border-radius: 5px;
     }
  
     .containerFilms {
@@ -69,7 +77,7 @@ export const StyledAll = styled.div`
     }
     h2 {
       font-size: 24px;
-      margin-left: 20px;
+      margin: 0 0 0 20px;
       color: white;
       @media(min-width: 600px) {
         font-size: 28px;
@@ -204,6 +212,10 @@ background-color: #222f3e;
   right: 0;
   left: 0;
   opacity: 0;
+
+  span:hover {
+    cursor: pointer;
+  }
 }
 
 /* HOVER */
@@ -311,4 +323,5 @@ padding: 35px 0;
 padding: 40px 0;
 }
 }
+
 `

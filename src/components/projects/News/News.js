@@ -22,27 +22,6 @@ export default class News extends Component {
       pictures,
     });
 
-    //         axios.get('/description').then(res => {
-    //             this.setState({
-    //                 description: res.data,
-    //             })
-    //     }).catch(err => console.log(err))
-
-    //     axios.get('/pictures').then(res => {
-    //         this.setState({
-    //             pictures: res.data,
-    //         })
-    // }).catch(err => console.log(err))
-    //     axios.get('/picturesThree').then(res => {
-    //         this.setState({
-    //             picturesThree: res.data,
-    //         })
-    //     }).catch(err => console.log(err))
-    //     axios.get('/picturesTwo').then(res => {
-    //         this.setState({
-    //             picturesTwo: res.data,
-    //         })
-    //     }).catch(err => console.log(err))
   }
 
   render() {

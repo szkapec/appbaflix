@@ -53,6 +53,7 @@ class OneSection extends Component {
           <a href="https://www.filmweb.pl/film/Jak+zosta%C5%82em+gangsterem.+Historia+prawdziwa-2019-835083">
             Wiecej informacji
           </a>
+          
         </StyledButton>
       </StyledContainer>
     );

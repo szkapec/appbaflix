@@ -13,14 +13,12 @@ export default class Error extends Component {
         )
     }
 }
-
 const StyledAll = styled.div`
     margin: 100px auto;
     font-size: 40px;
     color: white;
     background-color: #141414;
     text-align: center;
-
     img {
         width: 300px;
         height: 100px;

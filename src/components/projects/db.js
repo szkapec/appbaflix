@@ -47,7 +47,7 @@ export const pictures = [
     , "type": "Sci-Fi"
     , "presage": "https://www.filmweb.pl/video/Zwiastun/Daybreak+Zwiastun+nr+2+polski-51710"
   },
-  {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2020/06/06/14/36/fantasy-5266805_960_720.jpg" 
+  {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2019/12/16/17/13/berlin-4699765_960_720.jpg" 
     , "description":  "Ośmioro zamaskowanych przestępców napada na hiszpańską mennicę narodową. Ich przedstawicielem jest tajemniczy Profesor, który prowadzi negocjacje z policją."
     , "seasons": 3
     , "type": "Thriller"
@@ -75,7 +75,7 @@ export const pictures = [
 ]
 
 export const picturesTwo = [
-    {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2020/06/06/14/36/fantasy-5266805_960_720.jpg" },
+    {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2019/12/16/17/13/berlin-4699765_960_720.jpg" },
     {"id":4, "alt": "Czarne lustro",  "img": "https://cdn.pixabay.com/photo/2020/07/12/02/34/night-5395836_960_720.jpg" },
     {"id":3, "alt": "Dark", "img": "https://cdn.pixabay.com/photo/2020/07/16/13/34/lake-5410987_960_720.jpg" },
     {"id":7, "alt": "Sabrina",  "img": "https://cdn.pixabay.com/photo/2020/07/21/20/16/yacht-5427299_960_720.jpg" },
@@ -92,7 +92,7 @@ export const picturesThree = [
     {"id":3, "alt": "Dark", "img": "https://cdn.pixabay.com/photo/2020/07/16/13/34/lake-5410987_960_720.jpg" },
     {"id":1, "alt": "Trzynascie powodów", "img": "https://cdn.pixabay.com/photo/2020/04/18/18/18/door-5060421_960_720.jpg" },
 
-    {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2020/06/06/14/36/fantasy-5266805_960_720.jpg" },
+    {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2019/12/16/17/13/berlin-4699765_960_720.jpg" },
     {"id":4, "alt": "Czarne lustro",  "img": "https://cdn.pixabay.com/photo/2020/07/12/02/34/night-5395836_960_720.jpg" },
     {"id":5, "alt": "Paradise",  "img": "https://cdn.pixabay.com/photo/2020/07/11/13/35/heron-5394026_960_720.jpg" },
     {"id":8, "alt": "Daybreak",  "img": "https://cdn.pixabay.com/photo/2020/07/09/10/32/water-5386820_960_720.jpg" },
@@ -149,7 +149,7 @@ export const hightSlider = [
     , "time": "1godz 31min"
     
   },
-  {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2014/05/03/01/04/manhattan-336708_960_720.jpg" 
+  {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2019/12/16/17/13/berlin-4699765_960_720.jpg" 
     , "description":  "Ośmioro zamaskowanych przestępców napada na hiszpańską mennicę narodową. Ich przedstawicielem jest tajemniczy Profesor, który prowadzi negocjacje z policją."
     , "seasons": 3
     , "type": "thriller"
@@ -178,4 +178,41 @@ export const hightSlider = [
       , "presage": "https://www.filmweb.pl/video/Zwiastun/Trzyna%C5%9Bcie+powod%C3%B3w+sezon+4+Zwiastun+nr+4+%2C+polski-53746"
       , "time": "1godz 31min"
     }
+]
+
+
+export const hightSliderNew = [
+  {
+    // "id": 0, "images": "https://cdn.pixabay.com/photo/2016/11/16/10/26/girl-1828536_960_720.jpg"
+    "id": 0, "images": "https://cdn.pixabay.com/photo/2020/06/14/03/09/women-5296386__340.jpg", "name" : "Daybreak", "seasons": 1
+    , "type": "Sci-Fi"
+  },
+  {
+    "id": 1, "images": "https://cdn.pixabay.com/photo/2016/11/22/06/05/girl-1848454_960_720.jpg", "name" : "Sabrina" , "seasons": 0
+    , "type" :"dramat"
+  },
+  {
+    "id": 2, "images": "https://cdn.pixabay.com/photo/2016/03/23/04/01/beautiful-1274056_960_720.jpg", "name" : "Hakowanie świata" , "seasons": 1
+    , "type": "dokumentalny"
+  },
+  {
+    "id": 3, "images": "https://cdn.pixabay.com/photo/2016/01/19/17/48/woman-1149911_960_720.jpg", "name" : "Czarne lustro", "seasons": 5
+    , "type": "dramat"
+  },
+  {
+    "id": 4, "images": "https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_960_720.jpg", "name" : "Trzynascie powodów", "seasons": 4
+    , "type": "dramat"
+  },
+  {
+    "id": 5, "images": "https://cdn.pixabay.com/photo/2016/11/16/10/27/girl-1828538_960_720.jpg", "name" : "Parasite", "seasons": 0
+    , "type": "dramat"
+  },
+  {
+    "id": 6, "images": "https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083390_960_720.jpg", "name" : "Dom z papieru", "seasons": 3
+    , "type": "thriller"
+  },
+  {
+    "id": 7, "images": "https://cdn.pixabay.com/photo/2017/05/13/12/40/fashion-2309519_960_720.jpg", "name" : "Dark", "seasons": 3
+    , "type": "Sci-Fi"
+  }
 ]

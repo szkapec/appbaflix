@@ -11,7 +11,6 @@ export default class SliderFilms extends Component {
   };
 
   render() {
-    // const {id,img,time, alt, presage, seasons,type} = this.props
     const { picture } = this.props;
     const params = {
       slidesPerGroup: 1,

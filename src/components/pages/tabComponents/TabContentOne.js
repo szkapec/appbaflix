@@ -48,7 +48,7 @@ const TabContentContainer = styled.div`
         grid-template-columns: repeat(2,1fr);
         grid-gap: 32px;
         align-items: center;
-        font-size: 32px;
+        font-size: 25px;
         padding: 32px;
         color: white;
         @media(max-width: 960px){
@@ -62,11 +62,9 @@ const TabContentContainer = styled.div`
 
     .title {
         margin-top: 32px; 
-      
         @media(max-width: 1440px){
-            font-size: 20px;
-            line-height: 1;
-            margin-top: 32px; 
+            font-size: 18px;
+            line-height: 30px;
         }
     
     }

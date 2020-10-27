@@ -1,15 +1,6 @@
-// export default [
-//     {link: 'https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80', text: 'aaa'},
-//     {link: 'https://images.unsplash.com/photo-1470341223622-1019832be824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2288&q=80', text: 'bbb'},
-//     {link: 'https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2094&q=80', text: 'ccc'},
-//     {link: 'https://images.unsplash.com/photo-1534161308652-fdfcf10f62c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2174&q=80', text: 'ddd'}
-//     // 'https://www.google.com/search?q=losowe+zdjecia&client=firefox-b-d&tbm=isch&source=iu&ictx=1&fir=hmMyjh0Zixwj6M%252C8W2yVP86jGYxZM%252C_&vet=1&usg=AI4_-kQZwJxG6HxRUOSH48EHclxuxwat5w&sa=X&ved=2ahUKEwjR8IyAr6rqAhXSxaYKHZZlBAEQ9QEwAXoECAoQDg#imgrc=hmMyjh0Zixwj6M'
-//     // ,'https://4.bp.blogspot.com/-Ce0ZL4ju_-Y/UrtjdilXhHI/AAAAAAAAAL0/bUdF5L_ut9I/s1600/najpiekniejszy+widok+na+%C5%9Bwiecie.png'
-// ]
-
 export default [
     
-  {"id":9, "alt":"Dom z papieru", "img":"https://cdn.pixabay.com/photo/2020/06/06/14/36/fantasy-5266805_960_720.jpg", 
+  {"id":9, "alt":"Dom z papieru", "img":"https://cdn.pixabay.com/photo/2019/12/16/17/13/berlin-4699765_960_720.jpg", 
   "text": "Ośmioro zamaskowanych przestępców napada na hiszpańską mennicę narodową. Ich przedstawicielem jest tajemniczy Profesor, który prowadzi negocjacje z policją.",
   "top":1,
   "seazon": 3, "type":"Thriller", "Thriller":"https://www.filmweb.pl/video/Zwiastun/Dom+z+papieru+Zwiastun+nr+4+sezon+4%2C+polski-53184"},
@@ -31,7 +22,7 @@ export default [
       ,"seazon":0, "time":" czas 2godz 23min"
     , "type": "Dramat", "triller":"https://www.filmweb.pl/serial/Dark-2017-771383"},
 
-  {"id":6, "alt":"Gospel", "img":"https://cdn.pixabay.com/photo/2020/07/22/08/17/power-station-5428427_960_720.jpg", 
+  {"id":6, "alt":"Gospel", "img":"https://cdn.pixabay.com/photo/2020/09/07/11/57/stairway-5551641_960_720.jpg", 
     "text": "The Gospel' jest współczesnym dramatem o miłości i zbawieniu, osadzonym w świecie muzyki gospel i Afro - Amerykańskiego kościoła.",
     "top":5,
     "seazon": 0, "time":" czas 2godz 39min", "type":"Dramat", "triller":"https://www.filmweb.pl/video/Zwiastun/Gospel+Zwiastun+nr+1-15375"},

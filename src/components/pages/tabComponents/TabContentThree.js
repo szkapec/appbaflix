@@ -91,7 +91,6 @@ const TabContainer = styled.div`
             color: white;
             font-size: 15px;
         }
-    
     }
     .tab-content {
         margin: 0 1%;
@@ -102,14 +101,14 @@ const TabContainer = styled.div`
         .title {
             text-align: left;
             margin: 0 5%;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 30px;
         @media(min-width: 600px) {
             margin: 0 11%;
         }
         @media(min-width: 1440px) {
             line-height: 30px;
-            font-size: 32px;
+            font-size: 25px;
             }
         }
     }

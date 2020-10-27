@@ -1,16 +1,23 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import {NavLink } from 'react-router-dom'
 import styled from 'styled-components';
-export class Logged extends Component {
 
-    state = {
-        visible: false,
-    }
 
-    render() {
+export const Logged = () => {
+
+
+
+    const [visible, setVisible] = useState(false)
+    const [visibleNav, setVisibleNav] = useState(false)
+
+
+    const us = useEffect(() => {
+        // console.log(document.scrollingElement.scrollTop)
+    })
+
     const userLink = (
-        <StyledUlUserLink className="navbar-nav" onClick={ () => this.setState({visible:false})}>
-            <li className="nav-item">
+        <StyledUlUserLink className="navbar-nav" onClick={ () => setVisible(!visible)}>
+            <li className="nav-item" onClick={ () => setVisible(false)}>
                 <NavLink exact to="/" className="nav-link">
                   Strona główna
                 </NavLink>
@@ -43,19 +50,13 @@ export class Logged extends Component {
 
       const usersOption = (
             <span className="navbar-link">
-            
                 <span>
-                    
                     <div onClick={() => {
-                        this.setState({
-                            visible: !this.state.visible,
-                        })
+                        setVisible(!visible)
                     }} 
-                    className="nav-link">
+                    className="nav-link" >
                         <i style={{color: 'white'}} className="fas fa-bell"></i>
-                       
                     </div>
-                  
                 </span>
                 <span>
                     <NavLink to="/YourAccount" className="nav-link">
@@ -67,14 +68,15 @@ export class Logged extends Component {
      
        const notification = (
         <>
-          <StyledViewsConditional onClick={ () => this.setState({visible:false})}>Aktualnie brak powiadomień</StyledViewsConditional>
+          <StyledViewsConditional onClick={ () => setVisible(false)}>Aktualnie brak powiadomień</StyledViewsConditional>
         </>
     )
         return (
         <div className="navbar-link" style={{position: 'relative'}}>
-            
-            <StyledNav onClick={ () => this.setState({visible:false})} className="navbar navbar-expand-lg navbar-dark  "> 
-                <button
+
+            <StyledNav onClick={ () => setVisible(false)} className={`navbar navbar-expand-lg navbar-dark`}> 
+                <button 
+                onClick={() => setVisibleNav(!visibleNav)}
                 className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
@@ -85,7 +87,9 @@ export class Logged extends Component {
                     Przeglądaj
                 </button>
 
-                <span className="collapse navbar-collapse justify-content-md-left" id="navbarsExample10">
+                <span className={`collapse navbar-collapse justify-content-md-left`} id="navbarsExample10">
+                    {/* navbar-collapse justify-content-md-left collapse   schowane*/}
+                    {/* navbar-collapse justify-content-md-left collapse show    wlaczone* /} 
                 {/* {localStorage.usertoken ? userLink : loginRegLink} */}
                 {userLink}
                 </span>
@@ -93,15 +97,13 @@ export class Logged extends Component {
             </StyledNav>
             <StyledSpanRight>
                         {usersOption}
-                        {this.state.visible ? notification : null}
+                        {visible ? notification : null}
             </StyledSpanRight>
             <StyledColor>
 
             </StyledColor>
-
           </div>
         )
-    }
 }
 
 export default Logged
@@ -173,6 +175,9 @@ const StyledNav = styled.nav`
     width: 200px;
     background-color: rgba(0,0,0,0.8);
     z-index: 9;
+    button {
+        outline: none;
+    }
 
     @media(min-width: 990px) {
         width: 100%;

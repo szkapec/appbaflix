@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import axios from "axios";
-
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Baflix from "../../../assets/images/baflix2.png";
 import { pictures } from "../db";
 
 export default class Film extends Component {
@@ -11,6 +8,7 @@ export default class Film extends Component {
     data: "",
   };
   componentDidMount() {
+    window.scrollTo(0, 0);
     pictures.map((item) => {
       if (item.id == this.props.match.params.id) {
         this.setState({
@@ -18,15 +16,7 @@ export default class Film extends Component {
         });
       }
     });
-    // axios.get(`/filmsOne/`).then(res => {
-    //     res.data.map(item => {
-    //         if(item.id===this.props.match.params.id) {
-    //             this.setState({
-    //                 data: item,
-    //             })
-    //         }
-    //     })
-    // })
+
   }
 
   render() {
@@ -34,14 +24,7 @@ export default class Film extends Component {
     // console.log(data)
     return (
       <StyledFirstPages>
-        <StyledImgBaflix>
-          <Link to="/browse">
-            <img src={Baflix} alt="baflix" />
-          </Link>
-        </StyledImgBaflix>
-        <div>
           <StyledNameMovie>{data.alt}</StyledNameMovie>
-        </div>
         <StyledDescription>{data.description}</StyledDescription>
         <StyledImg>
           <img src={data.img} alt={data.alt} />
@@ -79,48 +62,73 @@ const StyledFirstPages = styled.div`
   min-height: 100vh;
 `;
 
-const StyledNameMovie = styled.span`
-  font-family: "Oxygen", sans-serif;
+const StyledNameMovie = styled.div`
+  font-family: 'Henny Penny', cursive;
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing: 3px;
   color: red;
   font-size: 20px;
   font-weight: 700;
-  margin-left: 30px;
+  margin: 30px auto;
   @media (min-width: 450px) {
     font-size: 30px;
   }
 `;
 
 const StyledDescription = styled.div`
-  width: 80%;
+  width: 100%;
   margin: 30px auto 10px;
   text-align: center;
-  @media (min-width: 600px) {
-    text-align: left;
-    width: 580px;
-    margin: 30px 30px 10px;
-  }
+  max-width: 700px;
+  width: 80%;
+  line-height: 28px;
+  letter-spacing: 2px;
+ @media(min-width: 1000px){
+  letter-spacing: 3px;
+ }
 `;
 const StyledImg = styled.div`
   position: relative;
-  margin-left: 15%;
-  margin-top: 50px;
-  img {
-    width: 80%;
-  }
+  margin: 50px auto 20px;
+  max-width: 650px;
 
+  img {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 20px;
+  }
   span {
     position: absolute;
     bottom: 10%;
   }
   .one {
-    left: 30px;
+    left: 20%;
+    bottom: 25px;
+    svg {
+      color: white;
+      width: 30px;
+      height: 30px;
+      :hover {
+          color: #95a5a6;
+        }
+    }
   }
   .two {
-    left: 90px;
+    left: 35%;
+    bottom: 25px;
+    svg {
+      color: white;
+      width: 30px;
+      height: 30px;
+      :hover {
+          color: #95a5a6;
+        }
+    }
   }
   @media (min-width: 800px) {
-    width: 580px;
-    margin-left: 30px;
+ 
     .one {
       svg {
         width: 40px;
@@ -133,13 +141,11 @@ const StyledImg = styled.div`
     }
     .two {
       svg {
-        margin-left: 30px;
+       
         width: 40px;
         height: 40px;
         color: white;
-        :hover {
-          color: #95a5a6;
-        }
+
       }
     }
   }
@@ -164,21 +170,10 @@ const StyledSeasonAndType = styled.div`
       margin: 10px;
     }
   }
+  @media(min-width: 700px) {
+    text-align: center;
+    max-width: 500px;
+    margin: 40px auto;
+  }
 `;
 
-const StyledImgBaflix = styled.div`
-  position: relative;
-  margin-left: 15%;
-  margin-top: 20px;
-  img {
-    width: 80%;
-  }
-  @media (min-width: 600px) {
-    margin-left: 0px;
-    img {
-      width: 400px;
-      height: 150px;
-      margin: 0 auto;
-    }
-  }
-`;
