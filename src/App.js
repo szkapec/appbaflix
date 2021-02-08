@@ -30,7 +30,6 @@ class App extends React.Component {
 
   addCart = (items) => {
     let fill = this.state.cart.filter((item) => item === items);
-    console.log(fill);
     if (fill.length === 0) {
       this.setState({
         cart: [...this.state.cart, items],

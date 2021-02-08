@@ -14,7 +14,6 @@ export default function Cart() {
                             {context.cart.length===0 ? null : <h2>Moja lista filmów i seriali </h2>}
                             {context.cart.length===0&&context.heart.length===0&&context.like.length===0 ? <div><h2>Moja lista filmów i seriali</h2>Nie masz dodanych filmów i seriali do obejrzenia</div> : null}
                             {context.cart&&context.cart.map(item => {
-                                console.log(item)
                              return <div key={item.id}>
                                 <div>Tytuł: {item.alt}</div>
                                 <div className="container-img">
