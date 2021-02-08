@@ -47,7 +47,7 @@ export const pictures = [
     , "type": "Sci-Fi"
     , "presage": "https://www.filmweb.pl/video/Zwiastun/Daybreak+Zwiastun+nr+2+polski-51710"
   },
-  {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2019/12/16/17/13/berlin-4699765_960_720.jpg" 
+  {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2016/03/27/07/38/dangerous-1282330_960_720.jpg" 
     , "description":  "Ośmioro zamaskowanych przestępców napada na hiszpańską mennicę narodową. Ich przedstawicielem jest tajemniczy Profesor, który prowadzi negocjacje z policją."
     , "seasons": 3
     , "type": "Thriller"
@@ -75,7 +75,7 @@ export const pictures = [
 ]
 
 export const picturesTwo = [
-    {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2019/12/16/17/13/berlin-4699765_960_720.jpg" },
+    {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2016/03/27/07/38/dangerous-1282330_960_720.jpg" },
     {"id":4, "alt": "Czarne lustro",  "img": "https://cdn.pixabay.com/photo/2020/07/12/02/34/night-5395836_960_720.jpg" },
     {"id":3, "alt": "Dark", "img": "https://cdn.pixabay.com/photo/2020/07/16/13/34/lake-5410987_960_720.jpg" },
     {"id":7, "alt": "Sabrina",  "img": "https://cdn.pixabay.com/photo/2020/07/21/20/16/yacht-5427299_960_720.jpg" },
@@ -92,7 +92,7 @@ export const picturesThree = [
     {"id":3, "alt": "Dark", "img": "https://cdn.pixabay.com/photo/2020/07/16/13/34/lake-5410987_960_720.jpg" },
     {"id":1, "alt": "Trzynascie powodów", "img": "https://cdn.pixabay.com/photo/2020/04/18/18/18/door-5060421_960_720.jpg" },
 
-    {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2019/12/16/17/13/berlin-4699765_960_720.jpg" },
+    {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2016/03/27/07/38/dangerous-1282330_960_720.jpg" },
     {"id":4, "alt": "Czarne lustro",  "img": "https://cdn.pixabay.com/photo/2020/07/12/02/34/night-5395836_960_720.jpg" },
     {"id":5, "alt": "Paradise",  "img": "https://cdn.pixabay.com/photo/2020/07/11/13/35/heron-5394026_960_720.jpg" },
     {"id":8, "alt": "Daybreak",  "img": "https://cdn.pixabay.com/photo/2020/07/09/10/32/water-5386820_960_720.jpg" },
@@ -149,7 +149,7 @@ export const hightSlider = [
     , "time": "1godz 31min"
     
   },
-  {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2019/12/16/17/13/berlin-4699765_960_720.jpg" 
+  {"id":9, "alt": "Dom z papieru",  "img": "https://cdn.pixabay.com/photo/2016/03/27/07/38/dangerous-1282330_960_720.jpg" 
     , "description":  "Ośmioro zamaskowanych przestępców napada na hiszpańską mennicę narodową. Ich przedstawicielem jest tajemniczy Profesor, który prowadzi negocjacje z policją."
     , "seasons": 3
     , "type": "thriller"
@@ -208,7 +208,7 @@ export const hightSliderNew = [
     , "type": "dramat"
   },
   {
-    "id": 6, "images": "https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083390_960_720.jpg", "name" : "Dom z papieru", "seasons": 3
+    "id": 6, "images": "https://cdn.pixabay.com/photo/2016/03/27/07/38/dangerous-1282330_960_720.jpg", "name" : "Dom z papieru", "seasons": 3
     , "type": "thriller"
   },
   {

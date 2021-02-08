@@ -1,6 +1,6 @@
 export default [
     
-  {"id":9, "alt":"Dom z papieru", "img":"https://cdn.pixabay.com/photo/2019/12/16/17/13/berlin-4699765_960_720.jpg", 
+  {"id":9, "alt":"Dom z papieru", "img":"https://cdn.pixabay.com/photo/2016/03/27/07/38/dangerous-1282330_960_720.jpg", 
   "text": "Ośmioro zamaskowanych przestępców napada na hiszpańską mennicę narodową. Ich przedstawicielem jest tajemniczy Profesor, który prowadzi negocjacje z policją.",
   "top":1,
   "seazon": 3, "type":"Thriller", "Thriller":"https://www.filmweb.pl/video/Zwiastun/Dom+z+papieru+Zwiastun+nr+4+sezon+4%2C+polski-53184"},
