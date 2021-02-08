@@ -1,24 +1,24 @@
 import React, { Component } from 'react'
 import images from '../../../assets/images/tab-1-pic.png';
 import styled from 'styled-components';
-import {Button} from './Button.css';
+import { Button } from './Button.css';
 
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
- class TabContentOne extends Component {
+class TabContentOne extends Component {
     render() {
         return (
             <TabContentContainer>
                 <div className="containers">
                     <div className="tab-content">
                         <div>
-                            <span className="title" style={{marginBottom: '2rem'}}>Jeśli zdecydujesz, że Baflix nie jest dla Ciebie - nie ma problemu, bez problemu anulujesz</span>
+                            <span className="title" style={{ marginBottom: '2rem' }}>Jeśli zdecydujesz, że Baflix nie jest dla Ciebie - nie ma problemu, bez problemu anulujesz</span>
                             <br></br>
                             <Link to="/choose-plan">
-                            <Button style={{marginTop: '2rem'}}>Spróbuj teraz</Button>
+                                <Button style={{ marginTop: '2rem' }}>Spróbuj teraz</Button>
                             </Link>
                         </div>
-                        <img src={images} alt="tab1"/>
+                        <img src={images} alt="tab1" />
                     </div>
                 </div>
             </TabContentContainer>

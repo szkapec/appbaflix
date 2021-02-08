@@ -1,48 +1,46 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components';
 import logo from '../../../assets/images/baflix2.png';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import CheckMarkLogo from '../../../assets/images/Checkmark.png';
 import { Button } from '../tabComponents/Button.css';
-import {FooterChoosePlan} from './FooterChoosePlan';
-
+import { FooterChoosePlan } from './FooterChoosePlan';
 export class ChoosePlan extends Component {
 
     componentDidMount() {
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     }
-    render(){
+    render() {
         return (
             <MainContainer>
                 <div className="stop"></div>
                 <div className="header-top">
                     <Link to="/login">
-                        <Logo src={logo} alt="logo"/>
+                        <Logo src={logo} alt="logo" />
                     </Link>
                     <Link to="/login" className="btn signIn-btn">
                         Sign In
                     </Link>
                 </div>
                 <div className="header-content">
-                    <img src={CheckMarkLogo} className="checkmark-logo" alt="checkmark logo"/>
+                    <img src={CheckMarkLogo} className="checkmark-logo" alt="checkmark logo" />
                     <p>Step <strong>1</strong>  of <strong>3</strong></p>
                     <h2>Choose your plan.</h2>
-                        <div className="checked-list">
-                            <div className="bullet">No Commitments, cancel anytime.</div>
-                            <div className="bullet">Everything on Baflix for one low price.</div>
-                            <div className="bullet">Unlimited viewing on all your devices</div>
-                        </div>
-                        <Link to="/login">
-                            <Button>See the plans</Button>
-                        </Link>
+                    <div className="checked-list">
+                        <div className="bullet">No Commitments, cancel anytime.</div>
+                        <div className="bullet">Everything on Baflix for one low price.</div>
+                        <div className="bullet">Unlimited viewing on all your devices</div>
+                    </div>
+                    <Link to="/login">
+                        <Button>See the plans</Button>
+                    </Link>
                 </div>
-                <FooterChoosePlan/>
-                
+                <FooterChoosePlan />
             </MainContainer>
         )
     }
-    }
-    
+}
+
 
 const MainContainer = styled.div`
     .stop {

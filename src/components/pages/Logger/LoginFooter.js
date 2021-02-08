@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-
-
 export default class LoginFooter extends Component {
     render() {
         return (
@@ -12,15 +10,12 @@ export default class LoginFooter extends Component {
                 <div className="footer-columns">
                     <ul>
                         <li><Link to="/">Gift cad Teams</Link></li>
-                        
                     </ul>
                     <ul>
                         <li><Link to="/">Terms of use</Link></li>
-                      
                     </ul>
                     <ul>
                         <li><Link to="/">Privacy Statement</Link></li>
-                      
                     </ul>
                     <ul>
                         <li><Link to="/">Media center</Link></li>
@@ -28,8 +23,7 @@ export default class LoginFooter extends Component {
                         <li><Link to="/">Cookie Preferences</Link></li>
                         <li><Link to="/">Legal Notices</Link></li>
                     </ul>
-                    
-                     </div>
+                </div>
             </FooterContainer>
         )
     }

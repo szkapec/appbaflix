@@ -12,7 +12,6 @@ export default class Login extends Component {
             <div className="main-login-container">
                  <div className="stop"></div>
                 <div className="header-top">
-                   
                    <Link to="/">
                         <Logo src={logo} alt="logo" className="logo"/>
                    </Link>

@@ -21,10 +21,9 @@ export default class Film extends Component {
 
   render() {
     const { data } = this.state;
-    // console.log(data)
     return (
       <StyledFirstPages>
-          <StyledNameMovie>{data.alt}</StyledNameMovie>
+        <StyledNameMovie>{data.alt}</StyledNameMovie>
         <StyledDescription>{data.description}</StyledDescription>
         <StyledImg>
           <img src={data.img} alt={data.alt} />
@@ -46,8 +45,6 @@ export default class Film extends Component {
           <b className="block"></b> typ filmu:<span> {data.type}</span>
         </StyledSeasonAndType>
         <div>
-          {/* typ filmu: {data.type}
-             <ResponsivePlayer></ResponsivePlayer> */}
         </div>
       </StyledFirstPages>
     );

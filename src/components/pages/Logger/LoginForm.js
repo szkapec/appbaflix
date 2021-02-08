@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import FBlogo from '../../../assets/images/fb-logo.png';
 
-
 const initState = {
     checked: false,
     email: '',
@@ -15,9 +14,7 @@ const initState = {
 
 const reqexp = RegExp()
 
-
 export default class LoginForm extends Component {
-
     state = initState;
 
     handleEmailChange = e => {
@@ -36,19 +33,19 @@ export default class LoginForm extends Component {
             emailError: '',
             passwordError: '',
         }
-        if(!this.state.email) {
+        if (!this.state.email) {
             inputError = true;
             errors.emailError = "Proszę wpisać prawidłowy email"
-        } 
-        else if (!this.state.email.match(reqexp)){
+        }
+        else if (!this.state.email.match(reqexp)) {
             inputError = true;
             errors.emailError = (
-                <span style={{color: 'red'}}> Your email adrress must be valid</span>
+                <span style={{ color: 'red' }}> Your email adrress must be valid</span>
             )
         }
-        if(this.state.password.length<4) {
-            inputError= true;
-            errors.passwordError= "Twoje hasło musi zawierać od 4 do 60 znaków"
+        if (this.state.password.length < 4) {
+            inputError = true;
+            errors.passwordError = "Twoje hasło musi zawierać od 4 do 60 znaków"
         }
         this.setState({
             ...errors
@@ -58,7 +55,7 @@ export default class LoginForm extends Component {
     onSubmit = e => {
         e.preventDefault()
         const err = this.validate();
-        if(!err) {
+        if (!err) {
             this.setState(initState);
         }
     }
@@ -68,38 +65,37 @@ export default class LoginForm extends Component {
         })
     }
     render() {
-        
         return (
             <FormContainer>
                 <div className="form-container">
                     <form>
                         <h1>Zaloguj się</h1>
                         <div className="input-container">
-                            <input onChange={this.handleEmailChange} value={this.state.email} className={this.state.emailError ? "input-error input-empty" : "input-empty"} type="email" required/>
+                            <input onChange={this.handleEmailChange} value={this.state.email} className={this.state.emailError ? "input-error input-empty" : "input-empty"} type="email" required />
                             <label htmlFor="">E-mail lub numer telefonu</label>
-                            <span style={{color:'#db7201'}}>{this.state.emailError}</span>
+                            <span style={{ color: '#db7201' }}>{this.state.emailError}</span>
                         </div>
                         <div className="input-container">
-                            <input onChange={this.handlePasswordChange} value={this.state.password} className={this.state.passwordError ? "input-error input-empty" : "input-empty"} type="password" required/>
+                            <input onChange={this.handlePasswordChange} value={this.state.password} className={this.state.passwordError ? "input-error input-empty" : "input-empty"} type="password" required />
                             <label htmlFor="">password</label>
-                            <span style={{color:'#db7201'}}>{this.state.passwordError}</span>
+                            <span style={{ color: '#db7201' }}>{this.state.passwordError}</span>
                         </div>
                         <div className="input-container">
                             <Button type="submit" onClick={e => this.onSubmit(e)}>Sign In</Button>
                         </div>
                         <label className="checkbox-container">
-                        <input type="checkbox" defaultChecked={this.state.checked} onChange={this.handlerChecked} />
-                           <span  className="remember"> Zapamiętaj mnie</span>
+                            <input type="checkbox" defaultChecked={this.state.checked} onChange={this.handlerChecked} />
+                            <span className="remember"> Zapamiętaj mnie</span>
                             <span className="checkmark"></span>
                         </label>
                         <Link to="/" className="need-help">Potrzebujesz pomocy?</Link>
                         <div className="bottom-form">
-                            <img src={FBlogo} alt="fb logo"/>
+                            <img src={FBlogo} alt="fb logo" />
                             <Link to="/" className="login-fb-text">Zaloguj się przez facebooka</Link>
-                            <br/>
-                            <br/>
+                            <br />
+                            <br />
                             <span>Nowy w Baflix? </span>
-                            <Link style={{color:'white'}} to="/" className="sign-up-text"> Zapisz się teraz</Link>
+                            <Link style={{ color: 'white' }} to="/" className="sign-up-text"> Zapisz się teraz</Link>
                         </div>
                     </form>
                 </div>

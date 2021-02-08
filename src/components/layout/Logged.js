@@ -1,109 +1,91 @@
 import React, { useState, useEffect } from 'react'
-import {NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components';
-
 
 export const Logged = () => {
 
-
-
     const [visible, setVisible] = useState(false)
     const [visibleNav, setVisibleNav] = useState(false)
-
-
-    const us = useEffect(() => {
-        // console.log(document.scrollingElement.scrollTop)
-    })
-
     const userLink = (
-        <StyledUlUserLink className="navbar-nav" onClick={ () => setVisible(!visible)}>
-            <li className="nav-item" onClick={ () => setVisible(false)}>
+        <StyledUlUserLink className="navbar-nav" onClick={() => setVisible(!visible)}>
+            <li className="nav-item" onClick={() => setVisible(false)}>
                 <NavLink exact to="/" className="nav-link">
-                  Strona główna
+                    Strona główna
                 </NavLink>
             </li>
             <li className="nav-item">
                 <NavLink to="/browse" className="nav-link">
-                  Filmy i seriale
+                    Filmy i seriale
                 </NavLink>
             </li>
-  
-            <li  className="nav-item">
-              <NavLink to="/news" className="nav-link">
-                  Najnowsze
+
+            <li className="nav-item">
+                <NavLink to="/news" className="nav-link">
+                    Najnowsze
                 </NavLink>
             </li>
-  
-            <li  className="nav-item">
+            {/* <li  className="nav-item">
               <NavLink to="/information" className="nav-link">
                   Informacje
                 </NavLink>
-            </li>
-  
-          <li className="nav-item">
-            <NavLink to="/cart" className="nav-link">
-              Moja lista
+            </li> */}
+            <li className="nav-item">
+                <NavLink to="/cart" className="nav-link">
+                    Moja lista
             </NavLink>
-          </li>
+            </li>
         </StyledUlUserLink>
-      )
+    )
 
-      const usersOption = (
-            <span className="navbar-link">
-                <span>
-                    <div onClick={() => {
-                        setVisible(!visible)
-                    }} 
+    const usersOption = (
+        <span className="navbar-link">
+            <span>
+                <div onClick={() => {
+                    setVisible(!visible)
+                }}
                     className="nav-link" >
-                        <i style={{color: 'white'}} className="fas fa-bell"></i>
-                    </div>
-                </span>
-                <span>
-                    <NavLink to="/YourAccount" className="nav-link">
-                        <StyledImg src="https://placeimg.com/640/480/any" alt="picturerandoms"/>
-                    </NavLink>
-                </span>
+                    <i style={{ color: 'white' }} className="fas fa-bell"></i>
+                </div>
             </span>
-      )
-     
-       const notification = (
+            <span>
+                <NavLink to="/YourAccount" className="nav-link">
+                    <StyledImg src="https://placeimg.com/640/480/any" alt="picturerandoms" />
+                </NavLink>
+            </span>
+        </span>
+    )
+    const notification = (
         <>
-          <StyledViewsConditional onClick={ () => setVisible(false)}>Aktualnie brak powiadomień</StyledViewsConditional>
+            <StyledViewsConditional onClick={() => setVisible(false)}>Aktualnie brak powiadomień</StyledViewsConditional>
         </>
     )
-        return (
-        <div className="navbar-link" style={{position: 'relative'}}>
-
-            <StyledNav onClick={ () => setVisible(false)} className={`navbar navbar-expand-lg navbar-dark`}> 
-                <button 
-                onClick={() => setVisibleNav(!visibleNav)}
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarsExample10"
-                aria-controls="navbarsExample10"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+    return (
+        <div className="navbar-link" style={{ position: 'relative' }}>
+            <StyledNav onClick={() => setVisible(false)} className={`navbar navbar-expand-lg navbar-dark`}>
+                <button
+                    onClick={() => setVisibleNav(!visibleNav)}
+                    className="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarsExample10"
+                    aria-controls="navbarsExample10"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
                     Przeglądaj
                 </button>
 
                 <span className={`collapse navbar-collapse justify-content-md-left`} id="navbarsExample10">
-                    {/* navbar-collapse justify-content-md-left collapse   schowane*/}
-                    {/* navbar-collapse justify-content-md-left collapse show    wlaczone* /} 
-                {/* {localStorage.usertoken ? userLink : loginRegLink} */}
-                {userLink}
+                    {userLink}
                 </span>
-               
             </StyledNav>
             <StyledSpanRight>
-                        {usersOption}
-                        {visible ? notification : null}
+                {usersOption}
+                {visible ? notification : null}
             </StyledSpanRight>
             <StyledColor>
-
             </StyledColor>
-          </div>
-        )
+        </div>
+    )
 }
 
 export default Logged

@@ -3,16 +3,14 @@ import { NavLink, Link } from 'react-router-dom';
 import logs from '../../assets/images/baflix2.png';
 import styled from 'styled-components';
 import { Icon } from 'react-icons-kit';
-import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right';
-import {Button} from './tabComponents/Button.css';
-
+import { ic_keyboard_arrow_right } from 'react-icons-kit/md/ic_keyboard_arrow_right';
+import { Button } from './tabComponents/Button.css';
+import bgc from '../../assets/background.jpg';
 class Header extends Component {
     render() {
         return (
             <StyledHeader className="header containers">
-                
                 <div className="header-top">
-                        
                     <NavLink to="/login" className="sugnIn-btn">Zaloguj się</NavLink>
                 </div>
                 <div className="header-content">
@@ -24,7 +22,6 @@ class Header extends Component {
                             <Icon className="icon" icon={ic_keyboard_arrow_right} size={37}></Icon>
                         </Button>
                     </Link>
-                    
                 </div>
             </StyledHeader>
         )
@@ -32,8 +29,6 @@ class Header extends Component {
 }
 
 export default Header;
-
-
 
 const StyledTitle = styled.h1`
     margin: 0 0 1.2rem;
@@ -74,7 +69,7 @@ const StyledHeader = styled.div`
     height: 70vh;
     position: relative;
     margin: 0;
-    background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2019/02/17/03/17/sunset-4001481_960_720.jpg') no-repeat;
+    background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url(${bgc}) no-repeat;
       height: 80vh;
       width: 100%;
       background-size: cover;

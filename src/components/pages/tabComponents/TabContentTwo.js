@@ -1,10 +1,10 @@
 import React from 'react'
-import {Button} from './Button.css';
+import { Button } from './Button.css';
 import styled from 'styled-components';
 import tabTv from '../../../assets/images/tab-tv.png';
 import tablet from '../../../assets/images/tab-tablet.png';
 import mac from '../../../assets/images/tab-macbook.png';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function TabContentTwo() {
     return (
@@ -13,28 +13,28 @@ export default function TabContentTwo() {
                 <div className="tab-top-content">
                     <span className="title">Oglądaj programy telewizyjne i filmy w dowolnym miejscu i czasie - spersonalizowane dla Ciebie</span>
                     <Link className="btn" to="/choose-plan">
-                    <Button>Spróbuj teraz</Button>
+                        <Button>Spróbuj teraz</Button>
                     </Link>
                 </div>
                 <div className="tab-bottom-content">
                     <div>
-                        <img className="tab-img" src={tabTv} alt="tabTv"/>
+                        <img className="tab-img" src={tabTv} alt="tabTv" />
                         <h3>Oglądaj na telewizorze</h3>
                         <p>Telewizory Smart TV, playstation, Xbox, Chromecast, Apple TV, Blu-ray.</p>
                     </div>
                     <div>
-                        <img className="tab-img" src={tablet} alt="tablet"/>
+                        <img className="tab-img" src={tablet} alt="tablet" />
                         <h3>Oglądaj na tablecie</h3>
                         <p>Telewizory Smart TV, playstation, Xbox, Chromecast, Apple TV, Blu-ray. </p>
                     </div>
                     <div >
-                        <img className="tab-img" src={mac} alt="mac"/>
+                        <img className="tab-img" src={mac} alt="mac" />
                         <h3>Oglądaj na telefonie</h3>
                         <p>Telewizory Smart TV, playstation, Xbox, Chromecast, Apple TV, Blu-ray. </p>
                     </div>
                 </div>
-                
-                </div>
+
+            </div>
         </TabContainer>
     )
 }

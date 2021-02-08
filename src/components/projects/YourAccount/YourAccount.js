@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
 import image from '../../../assets/images/baflix2.png'
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 export default class YourAccount extends Component {
     render() {
         return (
             <StyledAll>
                 <div>
                     <Link to="/browse">
-                         <img src={image} alt="image baflix"/>
+                        <img src={image} alt="image baflix" />
                     </Link>
                 </div>
                 <span> Nie jestes zalogowany </span>
-                
             </StyledAll>
         )
     }

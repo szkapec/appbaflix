@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import TabDor from './TabDor'
 import TabDevices from './TabDevices';
 import TabPrice from './TabPrice';
@@ -15,32 +15,32 @@ class TabComponents extends Component {
     render() {
         return (
             <div>
-                <Tabs className="tabs" selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({tabIndex})}>
+                <Tabs className="tabs" selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
                     <TabList className="tab-nav-container">
                         <Tab className={`${this.state.tabIndex === 0 ? 'active tab-selected' : null}`}>
-                            <TabDor/>
-                            <p><strong className="lgScreen">Żadnych zobowiązań <br/> Anuluj w dowolnym momencie</strong></p>
+                            <TabDor />
+                            <p><strong className="lgScreen">Żadnych zobowiązań <br /> Anuluj w dowolnym momencie</strong></p>
                             <span className="mdScreen">Anuluj</span>
                         </Tab>
                         <Tab className={`${this.state.tabIndex === 1 ? 'active tab-selected' : null}`}>
-                            <TabDevices/>
-                            <p  style={{marginTop:"-5.3rem"}}><strong className="lgScreen">Oglądaj wszędzie, na każdym urządzeniu</strong></p>
+                            <TabDevices />
+                            <p style={{ marginTop: "-5.3rem" }}><strong className="lgScreen">Oglądaj wszędzie, na każdym urządzeniu</strong></p>
                             <span className="mdScreen">Urządzenia</span>
                         </Tab>
                         <Tab className={`${this.state.tabIndex === 2 ? 'active tab-selected' : null}`}>
-                            <TabPrice/>
+                            <TabPrice />
                             <StyledPriceP><strong className="lgScreen">Wybierz pakiet</strong></StyledPriceP>
                             <span className="mdScreen price">Cena</span>
                         </Tab>
                     </TabList>
                     <TabPanel>
-                        <TabComponentOne/>
+                        <TabComponentOne />
                     </TabPanel>
                     <TabPanel>
-                        <TabComponentTwo/>
+                        <TabComponentTwo />
                     </TabPanel>
                     <TabPanel>
-                        <TabComponentThree/>
+                        <TabComponentThree />
                     </TabPanel>
                 </Tabs>
             </div>

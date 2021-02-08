@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import {Button} from './Button.css';
-import {Icon} from 'react-icons-kit';
-import {cross} from 'react-icons-kit/icomoon/cross';
-import {checkmark} from 'react-icons-kit/icomoon/checkmark';
-import {Link} from 'react-router-dom';
+import { Button } from './Button.css';
+import { Icon } from 'react-icons-kit';
+import { cross } from 'react-icons-kit/icomoon/cross';
+import { checkmark } from 'react-icons-kit/icomoon/checkmark';
+import { Link } from 'react-router-dom';
 
 export default function TabContentThree() {
     return (
@@ -35,15 +35,15 @@ export default function TabContentThree() {
                             </tr>
                             <tr>
                                 <td>HD</td>
-                                <td><Icon icon={cross} size={10}/></td>
-                                <td><Icon icon={checkmark} size={10}/></td>
-                                <td><Icon icon={checkmark} size={10}/></td>
+                                <td><Icon icon={cross} size={10} /></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
                             </tr>
                             <tr>
                                 <td>Ultra HD</td>
-                                <td><Icon icon={cross} size={10}/></td>
-                                <td><Icon icon={checkmark} size={10}/></td>
-                                <td><Icon icon={checkmark} size={10}/></td>
+                                <td><Icon icon={cross} size={10} /></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
                             </tr>
                             <tr>
                                 <td>Ilość urządzeń</td>
@@ -53,21 +53,21 @@ export default function TabContentThree() {
                             </tr>
                             <tr>
                                 <td>Oglądaj na swoim laptopie, telewizorze, telefonie i tablecie</td>
-                                <td><Icon icon={checkmark} size={10}/></td>
-                                <td><Icon icon={checkmark} size={10}/></td>
-                                <td><Icon icon={checkmark} size={10}/></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
                             </tr>
                             <tr>
                                 <td>Oglądaj na swoim telewizorze, telefonie i tablecie</td>
-                                <td><Icon icon={checkmark} size={10}/></td>
-                                <td><Icon icon={checkmark} size={10}/></td>
-                                <td><Icon icon={checkmark} size={10}/></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
                             </tr>
                             <tr>
                                 <td>Anuluj w dowolnym momencie</td>
-                                <td><Icon icon={checkmark} size={10}/></td>
-                                <td><Icon icon={checkmark} size={10}/></td>
-                                <td><Icon icon={checkmark} size={10}/></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
+                                <td><Icon icon={checkmark} size={10} /></td>
                             </tr>
                         </tbody>
                     </table>

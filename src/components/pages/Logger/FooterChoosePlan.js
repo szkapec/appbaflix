@@ -2,33 +2,28 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-
 export const FooterChoosePlan = () => {
     return (
         <FooterContainer>
-        <span className="footer-span">Questions? Call <Link to="">1-888-888-888</Link> </span>
-        <div className="footer-columns">
-            <ul>
-                <li><Link to="">Gift cad Teams</Link></li>
-                
-            </ul>
-            <ul>
-                <li><Link to="">Terms of use</Link></li>
-              
-            </ul>
-            <ul>
-                <li><Link to="">Privacy Statement</Link></li>
-            </ul>
-            <ul>
-                        <li><Link to="">Media center</Link></li>
-                        <li><Link to="">Buy gift Cards</Link></li>
-                    </ul>
-             </div>
-    </FooterContainer>
+            <span className="footer-span">Questions? Call <Link to="">1-888-888-888</Link> </span>
+            <div className="footer-columns">
+                <ul>
+                    <li><Link to="">Gift cad Teams</Link></li>
+                </ul>
+                <ul>
+                    <li><Link to="">Terms of use</Link></li>
+                </ul>
+                <ul>
+                    <li><Link to="">Privacy Statement</Link></li>
+                </ul>
+                <ul>
+                    <li><Link to="">Media center</Link></li>
+                    <li><Link to="">Buy gift Cards</Link></li>
+                </ul>
+            </div>
+        </FooterContainer>
     )
 }
-
-
 
 const FooterContainer = styled.footer`
     justify-content: center;

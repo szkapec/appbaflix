@@ -11,7 +11,6 @@ export default class HightSlider extends Component {
   };
 
   render() {
-    // const {id,img,time, alt, presage, seasons,type} = this.props
     const { picture } = this.props;
     const params = {
       slidesPerGroup: 2,
@@ -55,7 +54,7 @@ export default class HightSlider extends Component {
                 return (
                   <div key={id} className="swiper-slides">
                     <StyledSpan className="opacity">
-                     
+
                       <div className="description">{item.alt}</div>
                       <br></br>
                       <div className="white">
